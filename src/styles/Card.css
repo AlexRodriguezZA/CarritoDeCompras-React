@@ -1,0 +1,41 @@
+.card-conteiner{
+    border: solid black 2px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card-conteiner-lowcost{
+    border: solid rgb(6, 166, 20) 5px;
+    width: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.75);
+
+
+}
+.linea-divisora{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+button{
+    width: 80px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
