@@ -15,8 +15,8 @@ const Header = ({cantidadCarrito, functionSearch})=>{
                     <span className={cantidadCarrito === 0 ? ("numero-carrito-vacio") : ("numero-carrito")}> {cantidadCarrito} </span> 
                     <BsCart2 className="cart"/>
                 </a>
-                <CheckBox/>
             </div>
+            <CheckBox/>
         </header>
     )
 }

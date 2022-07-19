@@ -33,7 +33,10 @@ function App() {
                   (product.filter( (dataSearch) => dataSearch.name.toLowerCase().includes(searchProduct.toLocaleLowerCase())));
   //----------------------------------------------------------------------
 
- 
+  const HandlerCheckbox = ()=>{
+    
+  }
+
   
   return (
     <div className="App">
