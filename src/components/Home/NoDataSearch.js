@@ -1,6 +1,6 @@
 import React from "react";
 import {BsExclamationLg } from "react-icons/bs";
-import "../styles/NoDataSearch.css"
+import "../../styles/HomeCss/NoDataSearch.css"
 
 const NoDataSearch = ()=>{
         return(

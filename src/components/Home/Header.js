@@ -2,10 +2,10 @@ import React from "react";
 import {BsCart2 } from "react-icons/bs";
 import CheckBox from "./CheckBox";
 
-import "../styles/Header.css"
+import "../../styles/HomeCss/Header.css"
 
 
-const Header = ({cantidadCarrito, functionSearch})=>{
+const Header = ({cantidadCarrito, functionSearch,functionCheckbox,checked})=>{
     return(
         <header>
             <h1>Shopping </h1>
@@ -16,7 +16,9 @@ const Header = ({cantidadCarrito, functionSearch})=>{
                     <BsCart2 className="cart"/>
                 </a>
             </div>
-            <CheckBox/>
+            {/* Zona del checkbox */}
+            <CheckBox HandlerCheckbox={functionCheckbox}
+                        checkedValue={checked}/>
         </header>
     )
 }
