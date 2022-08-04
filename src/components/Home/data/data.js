@@ -8,7 +8,7 @@ const data = [
     { id: 7, name: "Ojotas", price: 450},
     { id: 8, name: "Zapatillas", price: 115},
     { id: 9, name: "Zapatos", price: 600},
-    { id: 10, name: "Campera jean", price: 89},
+    { id: 10, name: "Campera jean", price: 890},
     { id: 11, name: "Zapatos mujer", price: 600},
     { id: 12, name: "Campera algodon", price: 89},
     { id: 13, name: "Campera corderito", price: 90},
