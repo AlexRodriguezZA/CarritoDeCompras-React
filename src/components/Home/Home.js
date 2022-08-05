@@ -7,9 +7,6 @@ import ListadoCompleto from "./ListadoCompleto";
 import ListadoLowCost from "./ListadoLowCost";
 
 
-
-
-
 function Home() {
   const [product , setProduct] = useState([]);
   const [cartProd, setCartProd] = useState([]);
@@ -27,13 +24,14 @@ function Home() {
     
   const handlerAddProduct = (id) => {
     const newProduct = product.filter( product =>  product.id === id)
+    console.log(newProduct)
+    console.log(cartProd)
     setCartProd(cartProd.concat(newProduct))
   }
  
-// -------------lógica de filtrado de busquedas -----------------------
+// -------------lógica de filtrado y busquedas -----------------------
   const HandlerSearch = (event) => {
     setSearchProduct(event.target.value)
-    
   }
 
   const results = searchProduct.length === 0 ? (product) : 
