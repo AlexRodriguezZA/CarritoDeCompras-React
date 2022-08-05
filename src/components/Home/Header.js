@@ -10,7 +10,7 @@ const Header = ({cantidadCarrito, functionSearch,functionCheckbox,checked})=>{
         <header>
             <h1>Shopping </h1>
             <div className="input-container">
-                <input autoFocus type="text" placeholder="Search" onChange={(e)=>functionSearch(e)}/>
+                <input autoFocus={true} type="text" placeholder="Search" onChange={(e)=>functionSearch(e)}/>
                 <Link to="/carrito">  
                     <span className={cantidadCarrito === 0 ? ("numero-carrito-vacio") : ("numero-carrito")}> {cantidadCarrito} </span> 
                     <BsCart2 className="cart"/>

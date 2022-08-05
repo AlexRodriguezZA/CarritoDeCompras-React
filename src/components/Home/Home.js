@@ -7,9 +7,8 @@ import ListadoCompleto from "./ListadoCompleto";
 import ListadoLowCost from "./ListadoLowCost";
 
 
-function Home() {
+function Home({ProductosEnCarrito,setProductosEnCarrito}) {
   const [product , setProduct] = useState([]);
-  const [cartProd, setCartProd] = useState([]);
   const [searchProduct, setSearchProduct] = useState("");
   const [CheckProduct, setCheckProduct] = useState(false); 
   const [ProductLowCost, setProductLowCost] = useState([]);
@@ -24,9 +23,7 @@ function Home() {
     
   const handlerAddProduct = (id) => {
     const newProduct = product.filter( product =>  product.id === id)
-    console.log(newProduct)
-    console.log(cartProd)
-    setCartProd(cartProd.concat(newProduct))
+    setProductosEnCarrito(ProductosEnCarrito.concat(newProduct))
   }
  
 // -------------lógica de filtrado y busquedas -----------------------
@@ -45,7 +42,7 @@ function Home() {
   
   return (
     <div className="Home">
-        <Header cantidadCarrito={cartProd.length}
+        <Header cantidadCarrito={ProductosEnCarrito.length}
                 functionSearch={HandlerSearch}
                 functionCheckbox={HandlerCheckbox}
                 checked={CheckProduct}/>
